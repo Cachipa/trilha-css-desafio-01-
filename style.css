@@ -1,0 +1,186 @@
+* {
+    margin: 0; /* Removido o 'auto', que pode causar problemas */
+    padding: 0; /* Removido o 'auto', que pode causar problemas */
+    box-sizing: border-box; /* Corrigido para 'border-box' */
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+.banner {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(49,168,221, 0.3), rgba(0, 0, 0, 0.5)),
+        url('assets/images/banner.png'); /* A imagem está acima do gradiente */
+    background-size: cover; /* Ajusta o tamanho da imagem ao tamanho do container */
+    background-position: center; /* Centraliza a imagem no container */
+    width: 100%; /* O header ocupa toda a largura da página */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    padding: 30px;
+    padding-top: 30px;
+}
+
+.banner h1 {
+    color: #33A8DB; /* Defina a cor desejada */
+    font-size: 40px; /* Defina o tamanho da fonte desejado */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.banner p {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.banner button {
+    background-color: transparent; /* Remove o fundo do botão */
+    border: 3px solid #33A8DB; /* Adiciona uma borda azul */
+    color: #33A8DB; /* Define a cor do texto como azul */
+    padding: 15px 30px; /* Aumenta o tamanho do botão (ajuste conforme necessário) */
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s, color 0.3s; /* Animações suaves */
+}
+
+.banner button:hover {
+    background-color: rgba(51, 168, 219, 0.2); /* Muda o fundo no hover para dar efeito */
+    color: white; /* Muda a cor do texto no hover */
+}
+
+#course-content {
+    padding-top: 30px;
+    border-top: 3px solid #33A8DB;
+    width: 100%;
+}
+
+#course-content h2 {
+    color: #33A8DB;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+#course-content p {
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#course-content .modules-list {
+    margin: 20px;
+}
+
+#course-content .modules-list .module {
+    color: white;
+    width: 530px;
+    margin: 0 auto 20px;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
+}
+
+#course-content .modules-list .module span {
+    color: #33A8DB;
+}   
+
+#transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url('assets/images/woman-code.png');
+    background-attachment: fixed;
+    border-top: 3px solid #33A8DB;
+    border-bottom: 3px solid #33A8DB;
+    padding: 200px;
+    width: 100%;
+}
+
+#transform-world p {
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+#professional-challenges {
+    text-align: center;
+    width: 100%;
+}
+
+#professional-challenges img {
+    margin: 30px 0;
+}
+
+#professional-challenges h2 {
+    padding: 30px;
+    font-size: 32px;
+    color: #33A8DB;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+#professional-challenges p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 22px;
+    padding: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, 0), rgba(50, 168, 219, 0.2));
+    border-top: 3px solid #33A8DB;
+    width: 100%;
+}
+
+footer .dio-logo {
+    width: 300px;
+}
+
+footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
